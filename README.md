@@ -31,7 +31,7 @@ _This web application allows a pizza ordered online. It will calculate the price
 
 ## Please utilize the following link to navigate to a live version  of the site on Github Pages:
 
-http://mwilkin.github.io/pizzashop
+http://mwilkin.github.io/pizzapie
 
 ## Technologies Used
 
