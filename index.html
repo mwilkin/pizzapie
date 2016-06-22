@@ -24,58 +24,57 @@
 <!-- Customer information -->
 
 <!-- Delivery or pickup -->
-
-      <div class="form-group">
-        <label for="pizzaSize">Select a pizza size:</label>
-        <select class="form-control" name="pizza size" id="pizza-size">
-          <option>Select a size</option>
-          <option>Small ($14)</option>
-          <option>Medium ($18)</option>
-          <option>Large ($22)</option>
-          <option>Extra Large ($26)</option>
-        </select>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="protein">
-            <div class="form-group">
-              <label for="meat">Protein ($3 each): </label><br>
-                <input type="checkbox" id="meat-prosciutto" name="meat" value="prosciutto">Olympia Provisions Prosciutto<br>
-                <input type="checkbox" id="meat-bacon" name="meat" value="bacon">House-cured Canadian bacon<br>
-                <input type="checkbox" id="meat-sausage "name="meat" value="sausage">House-made Sausage<br>
-                <input type="checkbox" id="meat-chicken" name="meat" value="chicken">Free-range, hormone-free Chicken<br>
-                <input type="checkbox" id="meat-truffle" name="meat" value="oil">white truffle oil<br>
+      <div class="pizza-order">
+        <div class="form-group" id="order-form">
+          <label for="pizza-size">Select a pizza size:</label>
+          <select class="form-control" id="pizza-size">
+            <option>Select a size</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="protein">
+              <div class="form-group">
+                <label for="meat">Protein ($3 each): </label><br>
+                  <input type="checkbox" name="protein" value="Prosciutto">Prosciutto<br>
+                  <input type="checkbox" name="protein" value="Bacon">Bacon<br>
+                  <input type="checkbox" name="protein" value="Sausage">Sausage<br>
+                  <input type="checkbox" name="protein" value="Chicken">Chicken<br>
+                  <input type="checkbox" name="protein" value="White Truffle Oil">White Truffle Oil<br>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vegetable">
+              <div class="form-group">
+                <label for="vegetables">Vegetable ($2 each): </label><br>
+                  <input type="checkbox" name="vegetable" value="Olives">Olives<br>
+                  <input type="checkbox" name="vegetable" value="Mushrooms">Mushrooms<br>
+                  <input type="checkbox" name="vegetable" value="Arugula">Arugula<br>
+                  <input type="checkbox" name="vegetable" value="Eggplant">Eggplant<br>
+                  <input type="checkbox" name="vegetable" value="Onions">Onions<br>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="vegetable">
-            <div class="form-group">
-              <label for="vegetables">Vegetable ($2 each): </label><br>
-                <input type="checkbox" id="veg-olive" name="vegetable" value="olive">Greek Black Olives<br>
-                <input type="checkbox" id="veg-mushroom" name="vegetable" value="mushroom">Mushrooms<br>
-                <input type="checkbox" id="veg-arugula "name="vegetable" value="arugula">Fresh Organic Arugula<br>
-                <input type="checkbox" id="veg-eggplant" name="vegetable" value="eggplant">Roasted Eggplant<br>
-                <input type="checkbox" id="veg-onions" name="vegetable" value="onion">Camalized Onions<br>
-            </div>
-          </div>
-        </div>
       </div>
-      <button type="submit" class="btn btn-success" id="placeOrder">Place Order</button>
+      <!-- <button type="submit" class="btn btn-success" id="additionalPizza">Add another pizza</button> -->
+      <!-- <button type="submit" class="btn btn-success" id="addDelivery">Add Delivery</button> -->
+      <button type="submit" class="btn btn-success" id="calculatePrice">Calculate Price</button>
     </div>
-
 <!-- Pizza order output -->
     <div class="container" id="display-order">
       <h3>Order details</h3>
-        <p>Customer Name: <span class="customer-name"></span></p>
-        <p>Pizza Size: <span class="pizza-size"></span></p>
-        <p>Pizza Ingredients: <span class="pizza-ingredient"></span></p>
-        <p>Order Total: <span class="order-total"></span></p>
+      <ul id="orderedPizzas">
+
+
+      </ul>
       <h3>Thank you for business! Your order has been placed!</h3>
-    <button type="submit" class="btn btn-success" id="newOrder">Place New Order</button>
+      <!-- <button type="submit" class="btn btn-success" id="newOrder">Place New Order</button> -->
     </div>
-
-
-
-    </body>
-  </html>
+  </body>
+</html>
