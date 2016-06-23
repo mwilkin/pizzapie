@@ -25,7 +25,7 @@
 
 <!-- Delivery or pickup -->
     <div class="container">
-      <form class="pizzaOrderform">
+      <form class="pizzaOrderform" id="form">
         <h3>Place your order:</h3>
         <div class="row">
           <div class="col-md-3">
@@ -34,12 +34,12 @@
                 <label for="pizza-size">Select a pizza size:</label>
                   <div class="radio">
                     <label><input type="radio" name="size" value="small">Small</label>
-                 </div>
-                 <div class="radio">
-                   <label><input type="radio" name="medium" value="small">Medium</label>
+                  </div>
+                  <div class="radio">
+                   <label><input type="radio" name="size" value="medium" checked>Medium</label>
                 </div>
                 <div class="radio">
-                  <label><input type="radio" name="Large" value="small">Large</label>
+                  <label><input type="radio" name="size" value="large">Large</label>
                </div>
               </div>
             </div>
@@ -101,8 +101,8 @@
 <!-- Pizza order output -->
     <div class="container" id="display-order">
       <h3>Order details: </h3>
-      <h4>Pizza Size: A <span id="#pizza-size"></span> pizza.</h4>
-      <h4>Pizza Toppings: <span id="#pizza-toppings"></span> .</h4>
+      <h4>Pizza Size: Your order a <span id="pizza-size"></span> pizza.</h4>
+      <h4>Pizza Toppings: <span id="pizza-toppings"></span>.</h4>
       <h4>Pizza Cost: <span id="pizza-cost" ></span></h4>
       <h3>Thank you for business! Your order has been placed!</h3>
       <button type="submit" class="btn btn-success" id="newOrder" name="button">Place New Order</button>
