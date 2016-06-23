@@ -8,19 +8,12 @@ var toppings;
   this.pizzaToppings = toppings;
   this.pizzaPrice = 0;
 }
-// Clear fields
-// function resetFields() {
-//   $("#display-order").hide();
-//   $("input#checkbox:checkbox").removeAttr("checked");
-// }
 
 // function Address (street, city, state) {
 //   this.street = street;
 //   this.city = city;
 //   this.state = state;
 // }
-
-// Delivery
 
 // Prototypes
 Pizza.prototype.sizeCost = function () {
@@ -51,13 +44,6 @@ Pizza.prototype.toppingsCost = function() {
   }
 }
 
-// Order.prototype.totalPizzaPrice = function () {
-//   (this.orderPizzas).forEach(function(object){
-//     object.sizeCost();
-//     object.toppingsCost();
-//   });
-// }
-
 // User Interface
 $(document).ready(function() {
   $("form.pizzaOrderform").submit(function(event){
@@ -69,7 +55,6 @@ $(document).ready(function() {
       (toppings).push(" " + this.value);
     });
     newPizza = new Pizza(size, toppings);
-    debugger;
     newPizza.sizeCost();
     newPizza.toppingsCost();
 
