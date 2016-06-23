@@ -4,3 +4,9 @@
 #newOrder{
   display: none;
 }
+#orderSheet {
+  background-image: bluedoor.jpg;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-position: center;
+}
